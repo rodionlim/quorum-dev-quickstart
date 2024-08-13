@@ -1,7 +1,4 @@
 ---
-version: '3.6'
-
-
 {% if monitoring == "splunk" %}
 x-splunk-def:
   &splunk-def

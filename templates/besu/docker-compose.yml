@@ -1,6 +1,4 @@
 ---
-version: '3.6'
-
 x-besu-def:
   &besu-def
   restart: "on-failure"
