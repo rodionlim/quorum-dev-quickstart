@@ -27,7 +27,7 @@ x-tessera-def:
   build:
     context: config/tessera
     args:
-      TESSERA_VERSION: 22.10.1
+      TESSERA_VERSION: ${TESSERA_VERSION:-latest}
   environment:
     TESSERA_MODE: orion
   expose:
@@ -788,7 +788,6 @@ volumes:
 networks:
   quorum-dev-quickstart:
     name: quorum-dev-quickstart
-    external: true
     driver: bridge
     ipam:
       config:
