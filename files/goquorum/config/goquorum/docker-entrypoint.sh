@@ -40,6 +40,7 @@ then
     echo -n "Checking tessera is up ... "
     
     curl \
+        --noproxy '*' \
         --connect-timeout 5 \
         --max-time 10 \
         --retry 5 \
