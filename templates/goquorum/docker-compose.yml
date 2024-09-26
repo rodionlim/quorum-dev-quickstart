@@ -102,7 +102,7 @@ x-tessera-def:
     - 9101
   restart: "no"
   healthcheck:
-    test: ["CMD", "wget", "--spider", "--proxy", "off", "http://localhost:9000/upcheck"]
+    test: ["CMD", "wget", "--spider", "--no-proxy", "http://localhost:9000/upcheck"]
     interval: 3s
     timeout: 3s
     retries: 20
