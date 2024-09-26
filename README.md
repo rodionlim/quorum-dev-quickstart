@@ -12,7 +12,7 @@ Run directly from source code
 
 ```sh
 npm i
-npx ts-node ./src/index.js --clientType besu --outputPath ./quorum-test-network --monitoring default --privacy true
+npx ts-node ./src/index.ts --clientType besu --outputPath ./quorum-test-network --monitoring default --privacy true
 cd ./quorum-test-network && ./run.sh
 ```
 
